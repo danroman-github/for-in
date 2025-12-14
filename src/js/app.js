@@ -1,6 +1,5 @@
 import orderByProps from './orderByProps.js';
 
-// Пример из условия
 const obj = {
     name: 'мечник',
     health: 10,
@@ -17,10 +16,8 @@ result.forEach((item, index) => {
     console.log(`${index + 1}. ${item.key}: ${item.value}`);
 });
 
-// Дополнительные примеры
 console.log('\n--- Дополнительные примеры ---\n');
 
-// Пример с персонажем из игры
 const character = {
     name: 'Артур',
     class: 'Рыцарь',
@@ -37,7 +34,6 @@ sortedCharacter.forEach(prop => {
     console.log(`  ${prop.key}: ${prop.value}`);
 });
 
-// Пример с пустым порядком сортировки
 console.log('\nВсе свойства по алфавиту:');
 const alphabetical = orderByProps(character, []);
 alphabetical.forEach(prop => {
